@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.main.data-v-71bf3ec6 {
+  background-color: #F6F4F5;
+  height: 100vh;
+}
+.main .shopInfoBox.data-v-71bf3ec6 {
+  background-color: #F0D71A;
+  height: 80px;
+  position: fixed;
+}
+.main .shopInfoBox .shopInfo.data-v-71bf3ec6 {
+  background-color: #FFF;
+  height: 80px;
+  line-height: 80px;
+  box-shadow: 1px 1px 5px #E7E7E7;
+}
+.main .shopInfoBox .shopInfo .shopImg.data-v-71bf3ec6 {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+.main .shopInfoBox .shopInfo .shopTitle.data-v-71bf3ec6 {
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+}
+.main .food.data-v-71bf3ec6 {
+  display: flex;
+  height: 100%;
+  border-top: 1px solid #eee;
+}
+.main .food-class.data-v-71bf3ec6 {
+  background-color: #f5f9fc;
+  /* background-color: #eee; */
+  width: 180rpx;
+}
+.main .food-class .active.data-v-71bf3ec6 {
+  background-color: #fff;
+}
+.main .food-class .food-class-item.data-v-71bf3ec6 {
+  position: relative;
+  height: 100rpx;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180rpx;
+}
+.main .food-class .food-class-item.data-v-71bf3ec6:last-child {
+  margin-bottom: 120rpx;
+}
+.main .food-class .food-class-item .text.data-v-71bf3ec6 {
+  text-align: center;
+  max-height: 80rpx;
+  overflow: hidden;
+}
+.main .food-class .food-class-item .dot.data-v-71bf3ec6 {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  background-color: red;
+  right: 4rpx;
+  top: 4rpx;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20rpx;
+}
+.main .food-detail.data-v-71bf3ec6 {
+  flex-grow: 1;
+  padding: 0 14rpx;
+  font-size: 26rpx;
+  background-color: #FFF;
+}
+.main .food-detail .title.data-v-71bf3ec6 {
+  font-weight: 700;
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  /* background-color: #eee; */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 30rpx;
+}
+.main .food-detail .title-group.data-v-71bf3ec6 {
+  padding-bottom: 30rpx;
+}
+.main .food-detail .title-group.data-v-71bf3ec6:last-child {
+  margin-bottom: 120rpx;
+}
+.main.data-v-71bf3ec6 ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.main .food-info.data-v-71bf3ec6 {
+  margin-bottom: 30rpx;
+  display: flex;
+}
+.main .food-info.data-v-71bf3ec6:last-child {
+  margin-bottom: 0;
+}
+.main .food-info .img.data-v-71bf3ec6 {
+  width: 120rpx;
+  text-align: center;
+}
+.main .food-info .img image.data-v-71bf3ec6 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 15rpx;
+}
+.main .food-info .info.data-v-71bf3ec6 {
+  flex-grow: 1;
+  margin-left: 10rpx;
+}
+.main .info .name.data-v-71bf3ec6 {
+  font-size: 28rpx;
+  /* font-weight: 700; */
+}
+.main .info .note.data-v-71bf3ec6 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main .price-count.data-v-71bf3ec6 {
+  display: flex;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.main .price-count .price.data-v-71bf3ec6 {
+  font-size: 30rpx;
+  flex-grow: 1;
+  color: red;
+}
+.main .price-count .count.data-v-71bf3ec6 {
+  display: flex;
+  line-height: 60rpx;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+}
+.main .price-count .count .num.data-v-71bf3ec6 {
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.main .btns.data-v-71bf3ec6 {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  line-height: 50rpx;
+  background-color: #ffd161;
+  margin: 0 16rpx;
+}
+.main .cart.data-v-71bf3ec6 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 110rpx;
+  line-height: 110rpx;
+  background-image: linear-gradient(to right, #1F1E1E, #000);
+}
+.main .cart .cart-container.data-v-71bf3ec6 {
+  display: flex;
+  position: relative;
+  color: #eee;
+}
+.main .cart .del-price-money.data-v-71bf3ec6 {
+  flex-grow: 1;
+  font-size: 28rpx;
+  padding-left: 140rpx;
+  display: flex;
+  flex-direction: column;
+}
+.main .cart .del-price-money .money.data-v-71bf3ec6 {
+  font-size: 36rpx;
+  height: 60rpx;
+  /* line-height: 60rpx; */
+  line-height: 110rpx;
+}
+.main .cart .del-price-money .del-price.data-v-71bf3ec6 {
+  font-size: 24rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.main .cart .start-del.data-v-71bf3ec6 {
+  width: 200rpx;
+  font-weight: 700;
+  font-size: 30rpx;
+  text-align: center;
+  color: gray;
+  /* color: hsla(0,0%,40%,.5); */
+  background-image: linear-gradient(-135deg, #fff5ca, #fff2cc);
+  /* background-color: #2f2f2f; */
+  /* background-color: #17A9EE; */
+}
+.main .cart .cart-img.data-v-71bf3ec6 {
+  position: absolute;
+  top: -24rpx;
+  left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #666;
+  text-align: center;
+  z-index: 9;
+}
+.main .cart .cart-img image.data-v-71bf3ec6 {
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin-bottom: 20rpx;
+}
+.main .cart .has-food.data-v-71bf3ec6 {
+  color: #333;
+  background-image: linear-gradient(134deg, #ffde87, #ffc400);
+  /* background-color: #ffd161; */
+}
+.main .cart .cart-list.data-v-71bf3ec6 {
+  position: absolute;
+  bottom: 110rpx;
+  background-color: #fff;
+  width: 100%;
+}
+.main .cart .cart-list-header.data-v-71bf3ec6 {
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #eee;
+  text-align: right;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  color: #333;
+}
+.main .cart-list-item.data-v-71bf3ec6 {
+  max-height: 400rpx;
+  overflow: scroll;
+}
+.main .cart-list-item .item.data-v-71bf3ec6 {
+  display: flex;
+  align-items: center;
+  margin: 20rpx 0;
+}
+.main .cart-list-item .item .cart-detail.data-v-71bf3ec6 {
+  flex: 1;
+  /* height: 100rpx; */
+  line-height: 40rpx;
+  text-align: center;
+}
+.main .cart-count.data-v-71bf3ec6 {
+  display: flex;
+  align-items: center;
+}
+.main .bgmain.data-v-71bf3ec6 {
+  background-color: #ff6344;
+  color: white;
+}
+.main .cuIcon-back.data-v-71bf3ec6 {
+  color: white;
+}
+.main .notData.data-v-71bf3ec6 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.main .notData .icon.data-v-71bf3ec6 {
+  width: 130px;
+  padding-bottom: 15px;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+}
+
