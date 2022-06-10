@@ -4,12 +4,13 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false
+    "urlCheck": false,
+    "minified": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "wx680a89c15cadb265",
-  "projectname": "uniApp2",
+  "projectname": "uniapp_wx_shop",
   "condition": {
     "search": {
       "current": -1,

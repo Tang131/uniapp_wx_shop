@@ -2,9 +2,9 @@
 	<view class="main">
 		<navigationbar></navigationbar>
 		<view class="loginBox" :style="{'padding-top':topPadding+'px'}">
-			<view class="loginCol">
-				<image class="loginImg" src="../../../static/image/duser.png"></image>
-				<text class="loginText">登录</text>
+			<view class="loginCol" @tap="bindGetUserInfo">
+				<image class="loginImg" :src="userInfo.avatarUrl ? userInfo.avatarUrl : '../../../static/image/duser.png'"></image>
+				<text class="loginText">{{userInfo.nickName ? userInfo.nickName : '登录'}}</text>
 			</view>
 		</view>
 		<view class="listBox">
@@ -15,7 +15,8 @@
 			</view>
 			<uni-list class="listB">
 				<uni-list-item title="联系客服" showArrow thumb="/static/image/newminec5.png" thumb-size="sm" />
-				<uni-list-item title="微信客服" showArrow thumb="/static/image/newminec6.png" thumb-size="sm" rightText="[微信号: Zh_Test]" />
+				<uni-list-item title="微信客服" showArrow thumb="/static/image/newminec6.png" thumb-size="sm"
+					rightText="[微信号: Zh_Test]" />
 				<uni-list-item title="意见反馈" showArrow thumb="/static/image/newminec7.png" thumb-size="sm" />
 			</uni-list>
 		</view>
@@ -28,7 +29,8 @@
 	export default {
 		data() {
 			return {
-				topPadding: 44
+				topPadding: 44,
+				userInfo: {}
 			}
 		},
 		components: {
@@ -41,7 +43,35 @@
 			this.topPadding = statusBarHeight + ((uni.getMenuButtonBoundingClientRect().top - statusBarHeight) * 2 + uni
 				.getMenuButtonBoundingClientRect().height)
 		},
-		methods: {}
+		methods: {
+			login(authDetail) {
+				let _this = this
+				uni.login({
+					success(res) {
+						console.log('获取code成功', res)
+						// 调用自定义服务器方法...
+						// _this.$api.get_token()
+					},
+					fail(err) {
+						console.log('获取code失败', err)
+					}
+				})
+			},
+			bindGetUserInfo(e) {
+				let _this = this
+				uni.getUserProfile({
+					desc: 'weixin',
+					success: res => {
+						_this.login(res)
+						_this.userInfo = res.userInfo
+						console.log(res, '授权成功');
+					},
+					fail: err => {
+						console.log(err, '失败授权')
+					}
+				})
+			}
+		}
 	}
 </script>
 

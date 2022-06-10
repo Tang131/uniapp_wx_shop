@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/tabBar/myInfo/myInfo"],{
 
 /***/ 36:
-/*!*****************************************************************************!*\
-  !*** D:/uniApp/uniApp2/main.js?{"page":"pages%2FtabBar%2FmyInfo%2FmyInfo"} ***!
-  \*****************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/uniApp/uniapp_wx_shop/main.js?{"page":"pages%2FtabBar%2FmyInfo%2FmyInfo"} ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17,9 +17,9 @@ createPage(_myInfo.default);
 /***/ }),
 
 /***/ 37:
-/*!********************************************************!*\
-  !*** D:/uniApp/uniApp2/pages/tabBar/myInfo/myInfo.vue ***!
-  \********************************************************/
+/*!***************************************************************!*\
+  !*** D:/uniApp/uniapp_wx_shop/pages/tabBar/myInfo/myInfo.vue ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -58,9 +58,9 @@ component.options.__file = "pages/tabBar/myInfo/myInfo.vue"
 /***/ }),
 
 /***/ 38:
-/*!***************************************************************************************************!*\
-  !*** D:/uniApp/uniApp2/pages/tabBar/myInfo/myInfo.vue?vue&type=template&id=596ec897&scoped=true& ***!
-  \***************************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** D:/uniApp/uniapp_wx_shop/pages/tabBar/myInfo/myInfo.vue?vue&type=template&id=596ec897&scoped=true& ***!
+  \**********************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -80,9 +80,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 39:
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/uniApp/uniApp2/pages/tabBar/myInfo/myInfo.vue?vue&type=template&id=596ec897&scoped=true& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/uniApp/uniapp_wx_shop/pages/tabBar/myInfo/myInfo.vue?vue&type=template&id=596ec897&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -133,9 +133,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 40:
-/*!*********************************************************************************!*\
-  !*** D:/uniApp/uniApp2/pages/tabBar/myInfo/myInfo.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/uniApp/uniapp_wx_shop/pages/tabBar/myInfo/myInfo.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -149,9 +149,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 41:
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/uniApp/uniApp2/pages/tabBar/myInfo/myInfo.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/uniApp/uniapp_wx_shop/pages/tabBar/myInfo/myInfo.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -183,10 +183,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 {
   data: function data() {
     return {
-      topPadding: 44 };
+      topPadding: 44,
+      userInfo: {} };
 
   },
   components: {
@@ -199,15 +201,42 @@ __webpack_require__.r(__webpack_exports__);
     this.topPadding = statusBarHeight + ((uni.getMenuButtonBoundingClientRect().top - statusBarHeight) * 2 + uni.
     getMenuButtonBoundingClientRect().height);
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    login: function login(authDetail) {
+      var _this = this;
+      uni.login({
+        success: function success(res) {
+          console.log('获取code成功', res);
+          // 调用自定义服务器方法...
+          // _this.$api.get_token()
+        },
+        fail: function fail(err) {
+          console.log('获取code失败', err);
+        } });
+
+    },
+    bindGetUserInfo: function bindGetUserInfo(e) {
+      var _this = this;
+      uni.getUserProfile({
+        desc: 'weixin',
+        success: function success(res) {
+          _this.login(res);
+          _this.userInfo = res.userInfo;
+          console.log(res, '授权成功');
+        },
+        fail: function fail(err) {
+          console.log(err, '失败授权');
+        } });
+
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
 /***/ 42:
-/*!******************************************************************************************************************!*\
-  !*** D:/uniApp/uniApp2/pages/tabBar/myInfo/myInfo.vue?vue&type=style&index=0&id=596ec897&lang=scss&scoped=true& ***!
-  \******************************************************************************************************************/
+/*!*************************************************************************************************************************!*\
+  !*** D:/uniApp/uniapp_wx_shop/pages/tabBar/myInfo/myInfo.vue?vue&type=style&index=0&id=596ec897&lang=scss&scoped=true& ***!
+  \*************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -221,9 +250,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 43:
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/uniApp/uniApp2/pages/tabBar/myInfo/myInfo.vue?vue&type=style&index=0&id=596ec897&lang=scss&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/uniApp/uniapp_wx_shop/pages/tabBar/myInfo/myInfo.vue?vue&type=style&index=0&id=596ec897&lang=scss&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
